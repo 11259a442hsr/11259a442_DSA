@@ -7,9 +7,9 @@ struct stud {
 };
 int main() { 
     struct stud s1;  
-    s1.id = 11259419;
-    strcpy(s1.name, "Bharadwaj"); 
-    s1.cgpa = 7.83;    
+    s1.id = 11259442;
+    strcpy(s1.name, "V.Hema Sai Reddy"); 
+    s1.cgpa = 9.10;    
     printf("Student ID: %d\n", s1.id);
     printf("Student Name: %s\n", s1.name);
     printf("Student CGPA: %.2f\n", s1.cgpa);

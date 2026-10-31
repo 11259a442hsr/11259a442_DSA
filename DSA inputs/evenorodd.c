@@ -1,19 +1,28 @@
-#include<stdio.h>
-/// @brief 
-void main()
+#include <stdio.h>
+int main()
 {
-      int arr[100], n, i;
+    int a[100], n, i;
+    int even = 0, odd = 0;
+
     printf("Enter the number of elements: ");
     scanf("%d", &n);
-    printf("Enter %d elements:\n", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+
+    printf("Enter array elements:\n");
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
     }
-    printf("The elements of the array are:\n");
-    printf("[ ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+
+    for(i = 0; i < n; i++)
+    {
+        if(a[i] % 2 == 0)
+            even++;
+        else
+            odd++;
     }
-    printf("]");
-    printf("\n");
+
+    printf("Even numbers count = %d\n", even);
+    printf("Odd numbers count = %d\n", odd);
+
+    return 0;
 }
